@@ -11,12 +11,8 @@ public class Day17workshopApplication {
 	}
 
 }
-//write GET/boardgame<id>
-//200 {"..."} data
-//404{error: "id<id> not found"}
-//GET /boardgames <<this will return ['/boardgames/1', "/boardgames/2"..... etc]
-//by default, ln 14 gets 2 parameters > offset =0 and limit = 5. Offset to start from the top, limit is the line number limit
-//chuk wants us to find a way to get the keys and sort them by numerical order, and then list them from 0 to whatever number is limit
+
+
 
 //Structure it, only return json, use @RestController
 //ln14 returns one resource
