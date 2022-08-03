@@ -8,7 +8,7 @@ import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.beans.factory.annotation.Value;
+// import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.stereotype.Repository;
@@ -16,8 +16,8 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class BoardGameRepository {
     //to instantiate a set time to hold the cache or it will never leave
-    @Value ("${boardgame.cache.duration}")
-    private long cacheTime;
+    // @Value ("${boardgame.cache.duration}")
+    // private long cacheTime;
 
     @Autowired //please remember to do this or else the redisTemplate cannot work
     @Qualifier("redislab")
